@@ -1,3 +1,4 @@
+require_relative 'environment.rb'
 class Strain
     attr_accessor :id, :name, :race, :effect, :flavor
 

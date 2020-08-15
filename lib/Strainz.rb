@@ -1,6 +1,3 @@
-#require_relative '../config/environment.rb'
-#require "Strainz/version"
-
 module Strainz
   class Error < StandardError; end
   #def initialize("")
