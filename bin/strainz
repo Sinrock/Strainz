@@ -1,8 +1,7 @@
 #!/usr/bin/env ruby
 
-require "bundler/setup"
+require 'bundler/setup'
+require '../config/environment'
 require 'Strainz'
-require_relative '../config/environment'
 
-request = Strainz.new.call
-puts request
+Strainz.new.call

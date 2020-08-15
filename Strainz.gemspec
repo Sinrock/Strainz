@@ -6,8 +6,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Sinrock"]
   spec.email         = ["mruhaak@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.summary       = "summary of it"
+  spec.description   = "description"
   spec.homepage      = "https://github.com/Sinrock/Strainz.git"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
