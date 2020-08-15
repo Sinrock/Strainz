@@ -2,6 +2,6 @@
 
 require "bundler/setup"
 require "Strainz"
-require_relative '../config/environment'
+require_relative '../config/environment.rb'
 
 Strainz.new.call
