@@ -10,11 +10,10 @@ class StrainSearchCLI
       puts "Gathering the data you requested..."
       query = StrainImporter.new("https://strainapi.evanbusse.com/rvxnT8j/strains/search/all")
       hash = query.parse_json
-
+      #hash.each do |key, value|
+      puts hash.select { |k,v| v == "#{input}" }
+        #puts "The strain #{key}: has #{value} attributes."
       #puts "Results are so close!" #{hash}
-      hash.each do |key, value|
-      puts "#{key} => #{value}"
-      end
     end
   end
-end  
+end
