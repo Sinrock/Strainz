@@ -4,5 +4,6 @@ require 'json'
 require 'uri-handler'
 require 'colorize'
 
-require_relative "../lib/strain.rb"
-require_relative "../lib/strain_importer.rb"
+require_relative '../lib/strain.rb'
+require_relative '../lib/strain_importer.rb'
+require_relative '../lib/Strainz.rb'

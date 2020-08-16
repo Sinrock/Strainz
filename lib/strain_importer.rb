@@ -1,4 +1,4 @@
-require_relative '../config/environment.rb'
+module Strainz
 
 class StrainImporter
     def initialize(url)
@@ -12,4 +12,5 @@ class StrainImporter
     def parse_json
         JSON.parse(get_response_body)
     end
+end
 end
