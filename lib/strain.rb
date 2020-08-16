@@ -1,4 +1,5 @@
-require_relative 'environment.rb'
+require_relative '../config/environment.rb'
+
 class Strain
     attr_accessor :id, :name, :race, :effect, :flavor
 
@@ -11,4 +12,10 @@ class Strain
         @effect = effect
         @flavor = flavor
     end
+def self.all
+    @@all
+end
+
+
+
 end
