@@ -12,5 +12,10 @@ class StrainImporter
     def parse_json
         JSON.parse(get_response_body)
     end
+
+      #def self.matches
+       # match = new_strains.select { |key,value| value == "#{input}"}
+       # puts match
+   # end
 end
 end

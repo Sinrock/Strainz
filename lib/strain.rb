@@ -1,20 +1,42 @@
 module Strainz
     
 class Strain
-    #attr_accessor :id, :name, :race, :effect, :flavor
+    attr_accessor :id, :name, :race, :effect, :flavor
 
     @@all = []
 
-    def initialize#(id, name, race, effect, flavor)
+    def initialize(arg)#id="none", name="none", race="none", effects="none", flavors="none")
+        #@arg = arg
         #@id = id
         #@name = name
         #@race = race
-        #@effect = effect
-        #@flavor = flavor
-        #@@all << self
+        #@effects = effects
+        #@flavors = flavors
+        #self.id = id
+        #self.name = name
+        #self.race = race
+        #self.effect = effect
+        #self.flavor = flavor
+        #final = new_strains.select { |key,value| value == "#{input}"}
+        #puts final
+        #puts id
+        #puts name
+        #puts race
+        #puts effects
+        #puts flavors
     end
+    #def parse_json
+    #    JSON.parse(@alternative)
+    #    #puts self.parse_json
+    #end
+    
     def self.all
-        @@all
-    end
+    @@all
+  end
+  def save
+    self.class.all << self
+  end
+
+    #new_strains.select { |key,value| value == "#{input}"}
 end
 end
