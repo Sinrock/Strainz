@@ -12,7 +12,9 @@ class StrainSearchCLI
         input = gets.chomp.downcase
         puts "Gathering the data you requested...".yellow
         query = StrainImporter.new("https://strainapi.evanbusse.com/rvxnT8j/strains/search/all").parse_json
-        puts flatten_hash(query).flatten
+        
+        #puts flatten_hash(query).flatten
+        #puts JSON.parse flatten_hash(query)
         #flat_results = flatten_hash(query).flatten
         #new_strains = Strain.new(flat_results)
     
@@ -29,10 +31,5 @@ def flatten_hash(hash)
     end
    end
 end
-        #hashed = Strain.new("#{query}").strip_hash_values
-        #puts hashed
-        #puts JSON.parse(JSON.dump(query))
-        #puts Strain.new("#{query}")
-        #make_new = Strain.new("#{query}").display 
 end
 end

@@ -11,10 +11,5 @@ class Strain
     @flavors = flavors    
     save
   end
-
-  def self.find_by_trait(trait)
-    
-
-  end
 end
 end
