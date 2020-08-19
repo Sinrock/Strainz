@@ -3,8 +3,6 @@ module Strainz
 class Strain
     attr_accessor :id, :name, :race, :effects, :flavors
 
-     @@all = []
-
   def initialize(id, name, race, effects, flavors)
     @id = id
     @name = name
@@ -14,12 +12,9 @@ class Strain
     save
   end
 
-  def self.all
-    @@all
-  end
+  def self.find_by_trait(trait)
+    
 
-  def save
-    @@all << self
   end
 end
 end

@@ -3,6 +3,7 @@ require 'net/http'
 require 'json'
 require 'uri-handler'
 require 'colorize'
+require 'pry'
 
 require_relative '../lib/strain.rb'
 require_relative '../lib/strain_importer.rb'

@@ -12,22 +12,23 @@ class StrainSearchCLI
         input = gets.chomp.downcase
         puts "Gathering the data you requested...".yellow
         query = StrainImporter.new("https://strainapi.evanbusse.com/rvxnT8j/strains/search/all").parse_json
-        puts strip_hash_values(query)
+        puts flatten_hash(query).flatten
+        #flat_results = flatten_hash(query).flatten
+        #new_strains = Strain.new(flat_results)
+    
       end
 
-def strip_hash_values(hash)
-        hash.each do |k,v|
-          case v
-          when String
-            v.strip!
-          when Array
-            v.each {|vv| vv.strip!}
-          when Hash
-            strip_hash_values(v)
-          end
-        end
+def flatten_hash(hash)
+  hash.each_with_object({}) do |(k, v), h|
+    if v.is_a? Hash
+      flatten_hash(v).map do |h_k, h_v|
+        h["#{k}.#{h_k}".to_s] = h_v
       end
-    
+    else 
+      h[k] = v
+    end
+   end
+end
         #hashed = Strain.new("#{query}").strip_hash_values
         #puts hashed
         #puts JSON.parse(JSON.dump(query))
