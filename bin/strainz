@@ -2,4 +2,4 @@
 
 require_relative '../config/environment.rb'
 
-Strainz::StrainSearchCLI.new.run
+Strainz::CLI.new.run

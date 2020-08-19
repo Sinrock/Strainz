@@ -1,15 +1,9 @@
-module Strainz
-    
 class Strain
-    attr_accessor :id, :name, :race, :effects, :flavors
+    attr_accessor :name, :id, :race, :effects, :flavors
 
-  def initialize(id, name, race, effects, flavors)
-    @id = id
-    @name = name
-    @race = race
-    @effects = effects
-    @flavors = flavors    
-    save
+   def initialize(*h)
+    if h.length == 1 && h.first.kind_of?(Array)
+        h.first.each { |k,v| public_send("#{k}=",v) }
+    end
   end
-end
 end
