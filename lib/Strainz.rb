@@ -1,6 +1,8 @@
 module Strainz
   class CLI
     def run
+      data_hash = StrainImporter.new("https://strainapi.evanbusse.com/rvxnT8j/strains/search/all").parse_json
+      Strain.create_all_strains(data_hash)
       system("clear")
       @user_input = nil
       welcome
@@ -22,7 +24,7 @@ module Strainz
             exit
           else
             puts "Gathering the data you requested...".yellow
-            query = StrainImporter.new("https://strainapi.evanbusse.com/rvxnT8j/strains/search/all").parse_json
+            #query = StrainImporter.new("https://strainapi.evanbusse.com/rvxnT8j/strains/search/all").parse_json
           puts testing = Strain.new(query, "#{@user_input}").strainprint
           end
         end

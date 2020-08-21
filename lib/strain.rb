@@ -1,21 +1,35 @@
 class Strain
-  include Strainz
-    attr_accessor :id, :race, :effects, :flavors, :name
+  #include Strainz
+    attr_accessor(:id, :race, :effects, :flavors, :name)
     @@all = []
 
-   def initialize(hash, key)
-    if hash.has_key?(key)
-    fetch = hash.fetch(key)
+   def initialize(key, hash)
+    
+    #if hash.has_key?(key)
+    #fetch = hash.fetch(key)
     #if key not found return as much
-    @id = fetch.fetch("id")
-    @race = fetch.fetch("race")
-    @effects = fetch.fetch("effects")
-    @flavors = fetch.fetch("flavors")
+    @id = hash["id"]
+    @race = hash["race"]
+    @effects = hash["effects"]
+    @flavors = hash["flavors"]
     @name = key
     @@all << self
-    else puts "No Strain by that name exists. As far as I know of.".red
-   end
+    #else puts "No Strain by that name exists. As far as I know of.".red
+   #end
   end
+  def self.create_all_strains(api_call)
+  #iterate over the hash we get back
+  #for each of the strains in the hash instantiate a new object
+  api_call.each do |key, data|
+    self.new(key, data)
+
+  end
+  binding.pry
+end
+
+def self.find_by_name(strains)
+@@all.find {|args|}
+end
 
    def strainprint
     puts "Strain Name:".magenta + "#{name}".green
