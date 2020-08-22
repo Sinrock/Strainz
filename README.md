@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Enter the name of whatever strain you would like to get information back on.  It will return the strain's name, id# in the database, race, effects (both positive and negative) and flavor profiles.  If the name you enter isn't found in the database you will receive a message stating that the strain isn't found.  You can enter any strain name without regard for capitalizing letters or not, and without worrying about spacing (searching for a strain: blue dream, will work just fine).  There are a lot of people in the world that use or depend on medical and recreational marijuana for treatment for their health concerns.  I think this gem can help make the search for those strains that help us the most, just a bit easier. Enjoy!
 
 ## Development
 
