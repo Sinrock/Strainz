@@ -1,3 +1,4 @@
+module Strainz
 class Strain
     attr_accessor(:id, :race, :effects, :flavors, :name)
     @@all = []
@@ -24,4 +25,5 @@ end
    def self.all
     @@all
    end
+end
 end
