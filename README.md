@@ -1,6 +1,6 @@
 # Strainz
 
-This will help any medical marijuana or recreational users in finding specific information about all the variets of marijuana strains that exist in The Strain API.  Just enter the name of your favorite strain to learn all about it's attributes!
+This will help any medical marijuana or recreational users in finding specific information about all the varieties of marijuana strains in The Strain API.  Just enter the name of your favorite strain to learn all about it's attributes!
 
 ## Installation
 
