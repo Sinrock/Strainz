@@ -35,9 +35,6 @@ module Strainz
             else 
               puts "No strains with that name found in the database!".red
             end
-
-            #need to find the selected strain based on user input find by name method return 1 strain
-            #write if statement if found, print, if not return error message strain not found
           end
         end
     end

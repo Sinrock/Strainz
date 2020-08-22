@@ -21,7 +21,6 @@ end
 
 def self.find_by_name(query_name)
 @@all.find {|strain| strain.name == query_name}
-  
 end
 end
 
