@@ -1,6 +1,6 @@
 # Strainz
 
-This will help any medical marijuana or recreational users in finding specific information about all the variets of marijuana strains that exist in The Strain API. You can search by strain name, flavor, effect, race (indica, sativa, hybid) or you can list all of them. Though, this last option is not recommended by The Strain API developer as it takes a lot of resources to run.
+This will help any medical marijuana or recreational users in finding specific information about all the variets of marijuana strains that exist in The Strain API.  Just enter the name of your favorite strain to learn all about it's attributes!
 
 ## Installation
 
