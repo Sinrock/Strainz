@@ -11,7 +11,7 @@ module Strainz
       end
     end
     def welcome
-      puts "Welcome to Strainz!".green
+      puts "Welcome to Strainz!".green 
     end
       def main_menu
         puts "Search for the attributes of any marijuana strain!".light_blue
